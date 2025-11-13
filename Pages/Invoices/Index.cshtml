@@ -1,0 +1,27 @@
+﻿@page
+@model InvoiceApp.Pages.Invoices.IndexModel
+@{
+}
+<h2 class="text-center mb-3"> Invoices</h2>
+<a class="btn btn-primary" asp-page="/Invoices/Create">New Invoice</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Invoice No</th>
+            <th> Status </th>
+            <th>Client</th>
+            <th>Total Price</th>
+            <th>Issue Date</th>
+            <th>Due Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+      <tbody class="table-group-divider">
+        @foreach(var invoice in Model.invoiceList)
+        {
+            
+        }
+    </tbody>
+</table>
