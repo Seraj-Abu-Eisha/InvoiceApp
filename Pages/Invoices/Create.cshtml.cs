@@ -6,7 +6,7 @@ namespace InvoiceApp.Pages.Invoices
 {
     public class CreateModel : PageModel
     {
-        public InvoiceDto invoiceDto
+        public InvoiceDto invoiceDto { get; set; } = new();
         public void OnGet()
         {
         }

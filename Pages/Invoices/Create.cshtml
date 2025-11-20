@@ -2,3 +2,59 @@
 @model InvoiceApp.Pages.Invoices.CreateModel
 @{
 }
+
+
+<h2 class=" text-center mb-3" >New Invoice</h2>
+
+<form method="post">
+    <div class="row g-0 mb-3">
+        <div class="col-lg-6">
+
+            <div class="card h-100">
+                <div class="card-header">
+                    Invoice Details
+                </div>
+                <div class="card-body">
+                    <div class="row mb3">
+                        <label class="col-sm-4 col-form-label">Invoice No</label>
+                        <div class="col-sm-8">
+                        <input class="form-control" asp-for="invoiceDto.Number"/>
+                        <span asp-validation-for="invoiceDto.Number" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label">Payment Status</label>
+                        <div class="col-sm-8">
+                            <select class="form-select" asp-for="invoiceDto.Status">
+                                <option value="Pending">Pending</option>
+                                <option value="Paid">Paid</option>
+                            </select>
+                            <span asp-validation-for="invoiceDto.Status" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label">Issue Date</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="date" asp-for="invoiceDto.IssueDate" />
+                            <span asp-validation-for="invoiceDto.IssueDate" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label">Due Date</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="date" asp-for="invoiceDto.DueDate" />
+                            <span asp-validation-for="invoiceDto.DueDate" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+    </div>
+
+
+</form>
