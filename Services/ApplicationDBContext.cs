@@ -9,6 +9,6 @@ namespace InvoiceApp.Services
         {
         }
 
-        public DbSet<Invoce> Invoices { get; set; } = null!;
+        public DbSet<Invoice> Invoices { get; set; } = null!;
     }
 }

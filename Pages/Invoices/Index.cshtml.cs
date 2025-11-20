@@ -9,7 +9,7 @@ namespace InvoiceApp.Pages.Invoices
     {
         private readonly ApplicationDBContext context;
 
-        public List<Invoce> invoiceList = new();
+        public List<Invoice> invoiceList = new();
 
         public IndexModel(ApplicationDBContext context)
         {

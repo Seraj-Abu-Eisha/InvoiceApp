@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace InvoiceApp.models
 {
-    public class Invoce
+    public class Invoice
     {
         public int Id { get; set; }
         [Required]
